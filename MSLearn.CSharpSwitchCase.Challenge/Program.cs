@@ -43,6 +43,7 @@ switch (product[0])
         break;
 }
 
+/*
 if (product[1] == "BL")
 {
     color = "Black";
@@ -54,6 +55,20 @@ else if (product[1] == "MN")
 else
 {
     color = "White";
+}
+*/
+
+switch (product[1])
+{
+    case "BL":
+        color = "Black";
+        break;
+    case "MN":
+        color = "Maroon";
+        break;
+    default:
+        color = "White";
+        break;
 }
 
 if (product[2] == "S")
