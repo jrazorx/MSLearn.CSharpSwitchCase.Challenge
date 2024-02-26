@@ -8,6 +8,7 @@ string type = "";
 string color = "";
 string size = "";
 
+/*
 if (product[0] == "01")
 {
     type = "Sweat shirt";
@@ -23,6 +24,23 @@ else if (product[0] == "03")
 else
 {
     type = "Other";
+}
+*/
+
+switch (product[0])
+{
+    case "01":
+        type = "Sweat shirt";
+        break;
+    case "02":
+        type = "T-Shirt";
+        break;
+    case "03":
+        type = "Sweat pants";
+        break;
+    default:
+        type = "Other";
+        break;
 }
 
 if (product[1] == "BL")
